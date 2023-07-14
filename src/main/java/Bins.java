@@ -14,7 +14,7 @@ public class Bins {
 
     }
 
-    public int getBin(int check) {
+    public int numberOfRolls(int check) {
         for (int i = 0; i <= bin[0].length; i++) {
             if (bin[0][i] == check) {
                 return bin[1][i];
@@ -31,6 +31,9 @@ public class Bins {
         }
     }
 
+    public int[][] getBin() {
+        return bin;
+    }
 //    public static void main(String[] args) {
 //        Bins test = new Bins(2,12);
 //    }
