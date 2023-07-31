@@ -2,7 +2,7 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-public class BinsTest extends TestCase {
+public class BinsTest {
 
     @org.junit.jupiter.api.Test
     public void binsTest() {
@@ -23,7 +23,7 @@ public class BinsTest extends TestCase {
         int expected = 0;
         int receivedNum = bin.numberOfRolls(10);
 
-        assertEquals(expected, receivedNum);
+        Assert.assertEquals(expected, receivedNum);
     }
 
     @org.junit.jupiter.api.Test
@@ -33,7 +33,7 @@ public class BinsTest extends TestCase {
         int expected = 0;
         int receivedNum = bin.numberOfRolls(10);
 
-        assertEquals(expected, receivedNum);
+        Assert.assertEquals(expected, receivedNum);
 
     }
 }
